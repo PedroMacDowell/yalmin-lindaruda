@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feliz aniversário, meu amor</title>
+    <meta
+      name="description"
+      content="Uma surpresa de aniversário feita com coração, memórias e mensagens para personalizar."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="locked custom-cursor">
+    <div class="key-cursor" aria-hidden="true">
+      <svg viewBox="0 0 96 96" role="img">
+        <path class="key-glow" d="M35 55 63 27l8 8-8 8 6 6-7 7-6-6-8 8z"></path>
+        <path
+          class="key-body"
+          d="M27 65a18 18 0 1 1 12.73-30.73A18 18 0 0 1 27 65Zm0-12a6 6 0 1 0 0-12 6 6 0 0 0 0 12Zm12.4-10.4L66 16l14 14-6 6 6 6-8 8-6-6-9 9z"
+        ></path>
+      </svg>
+    </div>
+
+    <div class="floating-hearts" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <section class="intro" id="intro" aria-label="Abertura da surpresa">
+      <div class="heart-stage">
+        <button class="heart-lock" id="unlockButton" type="button" aria-label="Abrir o coração">
+          <span class="heart-half heart-left"></span>
+          <span class="heart-half heart-right"></span>
+          <span class="heart-core">
+            <span class="keyhole"></span>
+          </span>
+        </button>
+        <p class="intro-line">para a minha Amaruda</p>
+      </div>
+    </section>
+
+    <main class="site" id="site">
+      <nav class="topbar" aria-label="Navegação principal">
+        <a href="#sobre">Sobre nós</a>
+        <a href="#memorias">Memórias</a>
+        <button class="heart-mini" id="lockAgain" type="button" aria-label="Voltar para o coração">
+          <span aria-hidden="true">&hearts;</span>
+        </button>
+      </nav>
+
+      <section class="story section" id="sobre">
+        <div class="section-heading">
+          <p class="kicker">Nosso cantinho</p>
+          <h1>Feliz aniversário, minha Amaruda</h1>
+        </div>
+
+        <div class="story-layout">
+          <article
+            class="love-letter editable"
+            contenteditable="true"
+            spellcheck="true"
+            role="textbox"
+            aria-label="Texto sobre nós"
+            data-storage-key="story-letter-v2"
+          >
+            <p>
+              Faltam-me palavras para começar a falar sobre você, minha Amaruda.
+              Gostaria de começar dizendo que você mudou minha vida e deu cor ao
+              meu mundo.
+            </p>
+            <p>
+              Você é uma mulher ímpar, com jeitos e trejeitos pelos quais me
+              apaixono cada dia mais. Você é uma pessoa boa, tem um coração enorme
+              e é uma mulher fiel, companheira e justa. Só queria dizer obrigado:
+              você salvou o Pedro.
+            </p>
+            <p>
+              Hoje eu quero construir uma família com você, ter uma casa com você,
+              uma família e tudo a que tivermos direito. Sei que o aniversário é
+              seu, mas quem ganha o presente sou eu, por ter a sorte de ter uma
+              mulher como você comigo: minha amiga, companheira, minha vida
+              inteirinha. Te amo demais. Feliz aniversário, Amaruda!
+            </p>
+          </article>
+
+          <aside class="birthday-note" aria-label="Mensagem curta">
+            <p class="note-eyebrow">Hoje</p>
+            <div
+              class="editable short-message"
+              contenteditable="true"
+              spellcheck="true"
+              role="textbox"
+              aria-label="Mensagem curta de aniversário"
+              data-storage-key="story-side"
+            >
+              Você merece o mundo inteiro, mas eu começo te dando o meu coração.
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="gallery-section section" id="memorias">
+        <div class="section-heading compact">
+          <p class="kicker">Memórias escondidas</p>
+          <h2>Cada foto guarda um pedacinho nosso</h2>
+        </div>
+
+        <div class="memories-grid" id="memoriesGrid">
+          <article class="memory-card">
+            <div class="scratch-photo">
+              <img src="assets/photo-01.jpeg" alt="Selfie do casal à noite" loading="lazy">
+              <canvas class="scratch-canvas" aria-label="Foto escondida"></canvas>
+            </div>
+            <div class="message-box">
+              <p class="message-label">Mensagem 01</p>
+              <div class="editable photo-message" contenteditable="true" spellcheck="true" role="textbox" aria-label="Mensagem da foto 1" data-storage-key="photo-note-v2-01">O biquinho mais lindo deste mundo, que me cativa e me faz querer ser melhor todos os dias!</div>
+            </div>
+          </article>
+
+          <article class="memory-card">
+            <div class="scratch-photo">
+              <img src="assets/photo-02.jpeg" alt="Casal no quintal perto da piscina" loading="lazy">
+              <canvas class="scratch-canvas" aria-label="Foto escondida"></canvas>
+            </div>
+            <div class="message-box">
+              <p class="message-label">Mensagem 02</p>
+              <div class="editable photo-message" contenteditable="true" spellcheck="true" role="textbox" aria-label="Mensagem da foto 2" data-storage-key="photo-note-v2-02">Sempre cercada pela Caubinha, seu coração é puro e gigante!</div>
+            </div>
+          </article>
+
+          <article class="memory-card">
+            <div class="scratch-photo">
+              <img src="assets/photo-03.jpeg" alt="Ela sorrindo no jardim com o cachorro" loading="lazy">
+              <canvas class="scratch-canvas" aria-label="Foto escondida"></canvas>
+            </div>
+            <div class="message-box">
+              <p class="message-label">Mensagem 03</p>
+              <div class="editable photo-message" contenteditable="true" spellcheck="true" role="textbox" aria-label="Mensagem da foto 3" data-storage-key="photo-note-v2-03">O sorriso da mulher da minha vida me conquista todos os dias!</div>
+            </div>
+          </article>
+
+          <article class="memory-card">
+            <div class="scratch-photo">
+              <img src="assets/photo-04.jpeg" alt="Ela sentada usando roupa com corações" loading="lazy">
+              <canvas class="scratch-canvas" aria-label="Foto escondida"></canvas>
+            </div>
+            <div class="message-box">
+              <p class="message-label">Mensagem 04</p>
+              <div class="editable photo-message" contenteditable="true" spellcheck="true" role="textbox" aria-label="Mensagem da foto 4" data-storage-key="photo-note-04">Você é linda até quando nem percebe que está sendo.</div>
+            </div>
+          </article>
+
+          <article class="memory-card">
+            <div class="scratch-photo">
+              <img src="assets/photo-05.jpeg" alt="Ela descansando com o cachorro na cama" loading="lazy">
+              <canvas class="scratch-canvas" aria-label="Foto escondida"></canvas>
+            </div>
+            <div class="message-box">
+              <p class="message-label">Mensagem 05</p>
+              <div class="editable photo-message" contenteditable="true" spellcheck="true" role="textbox" aria-label="Mensagem da foto 5" data-storage-key="photo-note-05">Meu lugar favorito é onde existe paz com você.</div>
+            </div>
+          </article>
+
+          <article class="memory-card">
+            <div class="scratch-photo">
+              <img src="assets/photo-06.jpeg" alt="Beijo no rosto em uma selfie do casal" loading="lazy">
+              <canvas class="scratch-canvas" aria-label="Foto escondida"></canvas>
+            </div>
+            <div class="message-box">
+              <p class="message-label">Mensagem 06</p>
+              <div class="editable photo-message" contenteditable="true" spellcheck="true" role="textbox" aria-label="Mensagem da foto 6" data-storage-key="photo-note-06">Seu carinho fica em mim mesmo depois que o abraço acaba.</div>
+            </div>
+          </article>
+
+          <article class="memory-card">
+            <div class="scratch-photo">
+              <img src="assets/photo-07.jpeg" alt="Selfie em frente ao mar com amigos" loading="lazy">
+              <canvas class="scratch-canvas" aria-label="Foto escondida"></canvas>
+            </div>
+            <div class="message-box">
+              <p class="message-label">Mensagem 07</p>
+              <div class="editable photo-message" contenteditable="true" spellcheck="true" role="textbox" aria-label="Mensagem da foto 7" data-storage-key="photo-note-07">Com você, até o horizonte parece combinar com a gente.</div>
+            </div>
+          </article>
+
+          <article class="memory-card">
+            <div class="scratch-photo">
+              <img src="assets/photo-08.jpeg" alt="Ela sentada ao sol em uma área externa" loading="lazy">
+              <canvas class="scratch-canvas" aria-label="Foto escondida"></canvas>
+            </div>
+            <div class="message-box">
+              <p class="message-label">Mensagem 08</p>
+              <div class="editable photo-message" contenteditable="true" spellcheck="true" role="textbox" aria-label="Mensagem da foto 8" data-storage-key="photo-note-08">Você tem uma luz que deixa tudo mais bonito.</div>
+            </div>
+          </article>
+
+          <article class="memory-card">
+            <div class="scratch-photo">
+              <img src="assets/photo-09.jpeg" alt="Ela sorrindo na porta do quarto" loading="lazy">
+              <canvas class="scratch-canvas" aria-label="Foto escondida"></canvas>
+            </div>
+            <div class="message-box">
+              <p class="message-label">Mensagem 09</p>
+              <div class="editable photo-message" contenteditable="true" spellcheck="true" role="textbox" aria-label="Mensagem da foto 9" data-storage-key="photo-note-09">Esse sorriso é meu lembrete preferido de felicidade.</div>
+            </div>
+          </article>
+
+          <article class="memory-card">
+            <div class="scratch-photo">
+              <img src="assets/photo-10.jpeg" alt="Selfie descontraída do casal sob árvores" loading="lazy">
+              <canvas class="scratch-canvas" aria-label="Foto escondida"></canvas>
+            </div>
+            <div class="message-box">
+              <p class="message-label">Mensagem 10</p>
+              <div class="editable photo-message" contenteditable="true" spellcheck="true" role="textbox" aria-label="Mensagem da foto 10" data-storage-key="photo-note-10">A gente combina até nos registros mais espontâneos.</div>
+            </div>
+          </article>
+
+          <article class="memory-card">
+            <div class="scratch-photo">
+              <img src="assets/photo-11.jpeg" alt="Casal sorrindo dentro de casa" loading="lazy">
+              <canvas class="scratch-canvas" aria-label="Foto escondida"></canvas>
+            </div>
+            <div class="message-box">
+              <p class="message-label">Mensagem 11</p>
+              <div class="editable photo-message" contenteditable="true" spellcheck="true" role="textbox" aria-label="Mensagem da foto 11" data-storage-key="photo-note-11">Quando você sorri assim, meu mundo fica fácil.</div>
+            </div>
+          </article>
+
+          <article class="memory-card">
+            <div class="scratch-photo">
+              <img src="assets/photo-12.jpeg" alt="Selfie do casal abraçado" loading="lazy">
+              <canvas class="scratch-canvas" aria-label="Foto escondida"></canvas>
+            </div>
+            <div class="message-box">
+              <p class="message-label">Mensagem 12</p>
+              <div class="editable photo-message" contenteditable="true" spellcheck="true" role="textbox" aria-label="Mensagem da foto 12" data-storage-key="photo-note-12">Te escolher é uma das coisas mais bonitas que eu faço todos os dias.</div>
+            </div>
+          </article>
+
+          <article class="memory-card">
+            <div class="scratch-photo">
+              <img src="assets/photo-13.jpeg" alt="Ela fazendo sinal de paz na cozinha" loading="lazy">
+              <canvas class="scratch-canvas" aria-label="Foto escondida"></canvas>
+            </div>
+            <div class="message-box">
+              <p class="message-label">Mensagem 13</p>
+              <div class="editable photo-message" contenteditable="true" spellcheck="true" role="textbox" aria-label="Mensagem da foto 13" data-storage-key="photo-note-13">Que venham muitos aniversários seus comigo por perto.</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <footer class="final-message">
+        <div
+          class="editable"
+          contenteditable="true"
+          spellcheck="true"
+          role="textbox"
+          aria-label="Mensagem final"
+          data-storage-key="final-message"
+        >
+          Minha vida, esta página é só um pedacinho do tamanho do meu amor por você.
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
