@@ -19,7 +19,7 @@ function unlockPage() {
     body.classList.add("unlocked");
     site.setAttribute("tabindex", "-1");
     site.focus({ preventScroll: true });
-  }, 1050);
+  }, 720);
 }
 
 function lockPage() {
