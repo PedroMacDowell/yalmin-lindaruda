@@ -8,6 +8,7 @@ let cursorX = -100;
 let cursorY = -100;
 let currentX = -100;
 let currentY = -100;
+let scratchCardsReady = false;
 
 function unlockPage() {
   if (body.classList.contains("opening")) return;
@@ -19,7 +20,11 @@ function unlockPage() {
     body.classList.add("unlocked");
     site.setAttribute("tabindex", "-1");
     site.focus({ preventScroll: true });
-  }, 720);
+    if (!scratchCardsReady) {
+      scratchCardsReady = true;
+      document.querySelectorAll(".memory-card").forEach(setupScratchCard);
+    }
+  }, 620);
 }
 
 function lockPage() {
@@ -235,8 +240,5 @@ function setupScratchCard(card) {
 
   const resizeObserver = new ResizeObserver(resizeCanvas);
   resizeObserver.observe(photo);
-  window.addEventListener("load", resizeCanvas);
   resizeCanvas();
 }
-
-document.querySelectorAll(".memory-card").forEach(setupScratchCard);
