@@ -534,9 +534,13 @@ h2 {
   align-content: end;
   min-height: 360px;
   padding: 28px;
+  background: rgba(255, 253, 251, 0.74);
+}
+
+body.unlocked .birthday-note {
   background:
     linear-gradient(rgba(255, 253, 251, 0.74), rgba(255, 253, 251, 0.74)),
-    url("assets/photo-12.jpeg") center / cover;
+    url("assets/photo-12.webp") center / cover;
 }
 
 .note-eyebrow {
